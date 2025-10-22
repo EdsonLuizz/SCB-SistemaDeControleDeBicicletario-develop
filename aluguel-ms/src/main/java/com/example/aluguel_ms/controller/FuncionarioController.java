@@ -4,7 +4,7 @@ import com.example.aluguel_ms.model.Funcionario;
 import com.example.aluguel_ms.service.FuncionarioService;
 
 import java.util.List;
-import java.date;
+import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
