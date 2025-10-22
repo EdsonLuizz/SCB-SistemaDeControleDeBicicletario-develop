@@ -17,6 +17,11 @@ public class FuncionarioController {
     @Autowired
     private FuncionarioService service;
 
+    @GetMapping("/test")
+    public String test() {
+    return "SISTEMA FUNCIONANDO - " + new Date();
+    }
+    
     @PostMapping
     public ResponseEntity<Funcionario> criarFuncionario(@RequestBody Funcionario funcionario) {
         Funcionario criado = service.criarFuncionario(funcionario);
